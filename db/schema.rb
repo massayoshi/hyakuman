@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130409030647) do
+ActiveRecord::Schema.define(:version => 20130423152209) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -65,9 +65,8 @@ ActiveRecord::Schema.define(:version => 20130409030647) do
     t.string   "name"
     t.integer  "productline_id"
     t.string   "image"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-    t.integer  "manufacturer_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   add_index "materials", ["productline_id"], :name => "index_materials_on_productline_id"
